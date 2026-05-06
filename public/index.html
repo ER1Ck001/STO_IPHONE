@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="STO iPhone Catalão — A loja premium de iPhones e produtos Apple em Catalão, Goiás."/>
+  <title>STO iPhone Catalão | Loja Premium Apple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../src/css/styles.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <img src="../src/assets/images/logo.png" alt="STO iPhone" style="height:40px;width:auto"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#produtos">Produtos</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#comunidade">Comunidade</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="https://wa.me/5564993269148" class="nav-wa"><span>💬</span>WhatsApp</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mob-menu" id="mobMenu">
+  <a href="#produtos" onclick="toggleMenu()">Produtos</a>
+  <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+  <a href="#comunidade" onclick="toggleMenu()">Comunidade</a>
+  <a href="#contato" onclick="toggleMenu()">Contato</a>
+  <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="nav-wa" onclick="toggleMenu()"><span>💬</span>WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-logo-bg" style="background-image:url('../src/assets/images/logo.png')"></div>
+  
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-pulse"></span>
+        <span class="eyebrow-text">Premium Apple Store</span>
+      </div>
+      
+      <h1 class="hero-h1">
+        <span class="line-white">iPhone & Apple</span>
+        <span class="line-cyan">Originais</span>
+        <span class="line-outline">Garantia Total</span>
+      </h1>
+      
+      <p class="hero-p">
+        A melhor seleção de <strong>iPhones e produtos Apple</strong> em Catalão, Goiás. 
+        Garantia de fábrica, entrega rápida e atendimento premium.
+      </p>
+      
+      <div class="hero-btns">
+        <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="btn-wa">
+          <span>💬</span> Conversar no WhatsApp
+        </a>
+        <a href="#produtos" class="btn-products">
+          <span>📱</span> Ver Produtos
+        </a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="n">1K+</div>
+          <div class="l">Clientes Satisfeitos</div>
+        </div>
+        <div class="stat">
+          <div class="n">100%</div>
+          <div class="l">Garantia Original</div>
+        </div>
+        <div class="stat">
+          <div class="n">24h</div>
+          <div class="l">Entrega Rápida</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee">
+  <div class="mtrack" id="mtrack"></div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="sec">
+  <div class="sec-in">
+    <h2 class="sec-h2">Nossos Produtos</h2>
+    <p class="sec-desc">Seleção premium de iPhones, MacBooks, AirPods e acessórios Apple originais</p>
+    
+    <div class="pgrid">
+      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20iPhone%20original!" class="pcard ph">
+        <div class="pi">📱</div>
+        <h3>iPhones</h3>
+        <p>Últimos modelos com garantia</p>
+      </a>
+      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20MacBook%20original!" class="pcard ph">
+        <div class="pi">💻</div>
+        <h3>MacBook Pro</h3>
+        <p>Performance e design</p>
+      </a>
+      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20AirPods%20original!" class="pcard">
+        <div class="pi">🎧</div>
+        <h3>AirPods Pro</h3>
+        <p>Som premium</p>
+      </a>
+      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20Apple%20Watch%20original!" class="pcard">
+        <div class="pi">⌚</div>
+        <h3>Apple Watch</h3>
+        <p>Tecnologia no pulso</p>
+      </a>
+      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20acessórios!" class="pcard">
+        <div class="pi">🛡️</div>
+        <h3>Acessórios</h3>
+        <p>Capas, cabos e mais</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sec">
+  <div class="sec-in">
+    <h2 class="sec-h2">Por que escolher a STO?</h2>
+    
+    <div class="about-grid">
+      <div class="abt-left">
+        <div class="abt-img-wrap">
+          <div class="abt-img" style="background-image:url('../src/assets/images/logo.png')"></div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="sn">1K+</div>
+            <div class="sl">Clientes</div>
+          </div>
+          <div class="stat-card">
+            <div class="sn">5★</div>
+            <div class="sl">Avaliação</div>
+          </div>
+          <div class="stat-card">
+            <div class="sn">24h</div>
+            <div class="sl">Entrega</div>
+          </div>
+          <div class="stat-card">
+            <div class="sn">100%</div>
+            <div class="sl">Garantia</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="abt-right">
+        <h3 class="abt-h3">Loja Premium em Catalão</h3>
+        <p class="abt-p">
+          Somos a primeira e maior referência em iPhone e produtos Apple na região de Catalão, Goiás. 
+          Nossos produtos são 100% originais, com garantia de fábrica.
+        </p>
+        
+        <ul class="abt-list">
+          <li><span>✓</span> Produtos 100% Originais</li>
+          <li><span>✓</span> Garantia de Fábrica</li>
+          <li><span>✓</span> Entrega em 24h</li>
+          <li><span>✓</span> Parcelamento Disponível</li>
+          <li><span>✓</span> Atendimento Premium</li>
+          <li><span>✓</span> Suporte Técnico</li>
+        </ul>
+        
+        <a href="https://wa.me/5564993269148?text=Olá!%20Gostaria%20de%20mais%20informações!" class="btn-wa" style="display:inline-flex;margin-top:28px">
+          <span>💬</span> Fale Conosco
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec">
+  <div class="sec-in">
+    <h2 class="sec-h2">O que nossos clientes dizem</h2>
+    <p class="sec-desc">Confira as experiências reais de quem já comprou conosco</p>
+    
+    <div class="tgrid">
+      <div class="tcard">
+        <div class="tstar">⭐⭐⭐⭐⭐</div>
+        <p class="ttxt">"Produto original, entrega rápida e atendimento excelente. Recomendo muito!"</p>
+        <div class="tauth">João Silva</div>
+      </div>
+      <div class="tcard">
+        <div class="tstar">⭐⭐⭐⭐⭐</div>
+        <p class="ttxt">"Melhor preço da região e com garantia. Voltarei a comprar com certeza."</p>
+        <div class="tauth">Maria Santos</div>
+      </div>
+      <div class="tcard">
+        <div class="tstar">⭐⭐⭐⭐⭐</div>
+        <p class="ttxt">"Confiável, seguro e profissional. Ótima experiência de compra!"</p>
+        <div class="tauth">Pedro Costa</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMUNIDADE -->
+<section id="comunidade" class="sec">
+  <div class="sec-in">
+    <h2 class="sec-h2">Nossa Comunidade</h2>
+    <p class="sec-desc">Junte-se a milhares de clientes satisfeitos</p>
+    
+    <div class="ctgrid">
+      <div class="ccard ig">
+        <div class="cicon">📷</div>
+        <h3>Instagram</h3>
+        <p>Siga nossas novidades, promoções e dicas sobre produtos Apple</p>
+        <a href="https://www.instagram.com/stoiphone_/" target="_blank" class="btn-link">
+          Seguir no Instagram →
+        </a>
+      </div>
+      
+      <div class="ccard wa">
+        <div class="cicon">💬</div>
+        <h3>Grupo VIP WhatsApp</h3>
+        <p>Acesso exclusivo a promoções, lançamentos e suporte prioritário</p>
+        <a href="https://chat.whatsapp.com/EpRkA8TR1TB3RFNa9vKiV9" target="_blank" class="btn-link">
+          Entrar no Grupo →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="sec">
+  <div class="sec-in">
+    <h2 class="sec-h2">Entre em Contato</h2>
+    <p class="sec-desc">Estamos aqui para ajudar você</p>
+    
+    <div class="ctgrid">
+      <div class="contact-main">
+        <h3 class="cm-h3">Pronto para comprar?</h3>
+        <p class="cm-p">Envie uma mensagem no WhatsApp e nosso time responderá em segundos</p>
+        <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="btn-wa" style="display:inline-flex;font-size:18px">
+          <span>💬</span> Abrir WhatsApp
+        </a>
+      </div>
+      
+      <div class="contact-info">
+        <div class="ci-item">
+          <div class="ci-icon">📍</div>
+          <div>
+            <div class="ci-label">Localização</div>
+            <div class="ci-val">Catalão, GO</div>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">⏰</div>
+          <div>
+            <div class="ci-label">Horário</div>
+            <div class="ci-val">Seg-Dom: 9h-20h</div>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">📱</div>
+          <div>
+            <div class="ci-label">WhatsApp</div>
+            <div class="ci-val">(64) 99326-9148</div>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">📷</div>
+          <div>
+            <div class="ci-label">Instagram</div>
+            <div class="ci-val">@stoiphone_</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-in">
+    <div class="foot-left">
+      <img src="../src/assets/images/logo.png" alt="STO iPhone" style="height:40px;width:auto;margin-bottom:12px"/>
+      <p class="foot-desc">A loja premium de iPhone e produtos Apple em Catalão, Goiás.</p>
+    </div>
+    
+    <div class="foot-links">
+      <div>
+        <div class="fl-h">Produto</div>
+        <a href="#produtos">iPhone</a>
+        <a href="#produtos">MacBook</a>
+        <a href="#produtos">AirPods</a>
+        <a href="#produtos">Acessórios</a>
+      </div>
+      <div>
+        <div class="fl-h">Sobre</div>
+        <a href="#sobre">Quem Somos</a>
+        <a href="#comunidade">Comunidade</a>
+        <a href="#contato">Contato</a>
+        <a href="https://wa.me/5564993269148">WhatsApp</a>
+      </div>
+      <div>
+        <div class="fl-h">Redes</div>
+        <a href="https://www.instagram.com/stoiphone_/">Instagram</a>
+        <a href="https://chat.whatsapp.com/EpRkA8TR1TB3RFNa9vKiV9">Grupo VIP</a>
+        <a href="https://wa.me/5564993269148">Suporte</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="foot-bottom">
+    <p>&copy; 2024 STO iPhone Catalão. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- FLOATING WA BUTTON -->
+<a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="floating-wa" title="Abrir WhatsApp">
+  <span>💬</span>
+</a>
+
+<script src="../src/js/scripts.js"></script>
+</body>
+</html>

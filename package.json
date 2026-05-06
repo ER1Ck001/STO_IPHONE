@@ -1,0 +1,16 @@
+{
+  "name": "sto-iphone-catalao",
+  "version": "1.0.0",
+  "description": "Website Premium para STO iPhone Catalão",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "live-server public/ --port=3000",
+    "dev": "live-server public/"
+  },
+  "keywords": ["iphone", "apple", "store", "catalao"],
+  "author": "STO iPhone",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
