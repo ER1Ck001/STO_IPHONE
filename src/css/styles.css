@@ -240,6 +240,7 @@ a { color: inherit; }
   padding: 10px 18px; border-radius: 14px;
   font-size: 12px; font-weight: 700; color: var(--white);
   box-shadow: 0 8px 32px rgba(0,0,0,.4); white-space: nowrap;
+  display: flex; align-items: center; gap: 7px;
 }
 .hfloat-1 { top: 12%; right: 4%; animation: f1 5s ease-in-out infinite; }
 .hfloat-2 { top: 50%; right: -2%; animation: f2 5.5s ease-in-out infinite; }
@@ -534,6 +535,7 @@ footer {
   font-size: 12px; font-weight: 600; color: var(--muted);
   text-decoration: none; padding: 7px 14px; border-radius: 20px;
   border: 1px solid var(--border); transition: all .2s;
+  display: inline-flex; align-items: center; gap: 7px;
 }
 .foot-socials a:hover { color: var(--cyan); border-color: var(--borderhi); }
 
@@ -563,6 +565,39 @@ footer {
 .float-wa:hover { transform: scale(1.15); box-shadow: 0 8px 40px rgba(37,211,102,.75); }
 @keyframes fwapop { 0%,100%{transform:scale(1)} 50%{transform:scale(1.05)} }
 .float-wa:hover { animation: none; }
+
+/* ── SVG ICONS ── */
+svg { display: inline-block; vertical-align: middle; fill: currentColor; flex-shrink: 0; }
+
+/* Hero float icons */
+.hfloat-ico { flex-shrink: 0; }
+.hfloat-ico-check { color: #4cd964; }
+.hfloat-ico-bolt   { color: #ffd60a; }
+.hfloat-ico-shield { color: var(--cyan); }
+
+/* "Outros modelos" SVG icon */
+.other-icon-svg { color: rgba(0,184,230,.35); }
+
+/* Stars in reviews */
+.review-stars { display: flex; gap: 2px; }
+.star { color: #ffd60a; }
+
+/* Social card icons with brand colors */
+.social-ig .social-icon svg { color: #e1306c; }
+.social-wa .social-icon svg { color: var(--wa); }
+.social-icon { line-height: 0; }
+
+/* Contact info icon colors */
+.ci-item .ci-icon svg { color: var(--cyan); }
+.ci-link:hover .ci-icon svg { color: var(--cyan2); }
+
+/* Footer social icons */
+.foot-socials a { gap: 7px; }
+.foot-socials a svg { color: var(--cyan); }
+
+/* CTA icon (WA large) */
+.cta-icon { line-height: 0; }
+.cta-icon svg { color: var(--wa); }
 
 /* ── SCROLL REVEAL ── */
 .rv  { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
