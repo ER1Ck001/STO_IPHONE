@@ -7,22 +7,28 @@
   <title>STO iPhone Catalão | Loja Premium Apple</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../src/css/styles.css"/>
 </head>
 <body>
 
-<!-- NAV -->
+<!-- ═══ NAV ═══ -->
 <nav id="nav">
   <a href="#" class="nav-logo">
-    <img src="../src/assets/images/logo.png" alt="STO iPhone" style="height:40px;width:auto"/>
+    <img src="../src/assets/images/logo.png" alt="STO iPhone"/>
   </a>
   <ul class="nav-links">
+    <li><a href="#iphones">iPhones</a></li>
     <li><a href="#produtos">Produtos</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#comunidade">Comunidade</a></li>
     <li><a href="#contato">Contato</a></li>
-    <li><a href="https://wa.me/5564993269148" class="nav-wa"><span>💬</span>WhatsApp</a></li>
+    <li>
+      <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="nav-wa">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+        WhatsApp
+      </a>
+    </li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
@@ -30,252 +36,418 @@
 </nav>
 
 <div class="mob-menu" id="mobMenu">
+  <a href="#iphones" onclick="toggleMenu()">iPhones</a>
   <a href="#produtos" onclick="toggleMenu()">Produtos</a>
   <a href="#sobre" onclick="toggleMenu()">Sobre</a>
   <a href="#comunidade" onclick="toggleMenu()">Comunidade</a>
   <a href="#contato" onclick="toggleMenu()">Contato</a>
-  <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="nav-wa" onclick="toggleMenu()"><span>💬</span>WhatsApp</a>
+  <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="mob-wa" onclick="toggleMenu()">
+    💬 Falar no WhatsApp
+  </a>
 </div>
 
-<!-- HERO -->
+<!-- ═══ HERO ═══ -->
 <section class="hero">
   <div class="hero-bg"></div>
-  <div class="hero-grid-lines"></div>
-  <div class="hero-logo-bg" style="background-image:url('../src/assets/images/logo.png')"></div>
-  
+  <div class="hero-grid"></div>
   <div class="hero-inner">
+
     <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span class="eyebrow-pulse"></span>
-        <span class="eyebrow-text">Premium Apple Store</span>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Premium Apple Store · Catalão, GO
       </div>
-      
+
       <h1 class="hero-h1">
-        <span class="line-white">iPhone & Apple</span>
-        <span class="line-cyan">Originais</span>
-        <span class="line-outline">Garantia Total</span>
+        <span class="h1-white">iPhone &amp; Apple</span>
+        <span class="h1-cyan">100% Originais</span>
+        <span class="h1-outline">Garantia Total</span>
       </h1>
-      
-      <p class="hero-p">
-        A melhor seleção de <strong>iPhones e produtos Apple</strong> em Catalão, Goiás. 
-        Garantia de fábrica, entrega rápida e atendimento premium.
+
+      <p class="hero-desc">
+        A maior referência em <strong>iPhones e produtos Apple</strong> em Catalão, Goiás.
+        Produtos originais, garantia de fábrica e atendimento premium no WhatsApp.
       </p>
-      
+
       <div class="hero-btns">
         <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="btn-wa">
-          <span>💬</span> Conversar no WhatsApp
+          💬 Falar no WhatsApp
         </a>
-        <a href="#produtos" class="btn-products">
-          <span>📱</span> Ver Produtos
+        <a href="#iphones" class="btn-ghost">
+          📱 Ver iPhones
         </a>
       </div>
-      
+
       <div class="hero-stats">
-        <div class="stat">
-          <div class="n">1K+</div>
-          <div class="l">Clientes Satisfeitos</div>
+        <div class="hstat">
+          <span class="hstat-n">1K+</span>
+          <span class="hstat-l">Clientes</span>
         </div>
-        <div class="stat">
-          <div class="n">100%</div>
-          <div class="l">Garantia Original</div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n">100%</span>
+          <span class="hstat-l">Original</span>
         </div>
-        <div class="stat">
-          <div class="n">24h</div>
-          <div class="l">Entrega Rápida</div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n">5★</span>
+          <span class="hstat-l">Avaliação</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-n">24h</span>
+          <span class="hstat-l">Entrega</span>
         </div>
       </div>
     </div>
+
+    <div class="hero-visual">
+      <div class="hero-glow"></div>
+      <img src="../src/assets/images/hero-phone.jpg" alt="iPhone" class="hero-phone"/>
+      <div class="hfloat hfloat-1">✅ Original Apple</div>
+      <div class="hfloat hfloat-2">🚀 Entrega Rápida</div>
+      <div class="hfloat hfloat-3">🛡️ Garantia Incluída</div>
+    </div>
+
   </div>
 </section>
 
-<!-- MARQUEE -->
-<section class="marquee">
+<!-- ═══ MARQUEE ═══ -->
+<div class="marquee-wrap">
   <div class="mtrack" id="mtrack"></div>
-</section>
+</div>
 
-<!-- PRODUTOS -->
-<section id="produtos" class="sec">
+<!-- ═══ IPHONES EM DESTAQUE ═══ -->
+<section id="iphones" class="sec">
   <div class="sec-in">
-    <h2 class="sec-h2">Nossos Produtos</h2>
-    <p class="sec-desc">Seleção premium de iPhones, MacBooks, AirPods e acessórios Apple originais</p>
-    
-    <div class="pgrid">
-      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20iPhone%20original!" class="pcard ph">
-        <div class="pi">📱</div>
-        <h3>iPhones</h3>
-        <p>Últimos modelos com garantia</p>
-      </a>
-      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20MacBook%20original!" class="pcard ph">
-        <div class="pi">💻</div>
-        <h3>MacBook Pro</h3>
-        <p>Performance e design</p>
-      </a>
-      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20AirPods%20original!" class="pcard">
-        <div class="pi">🎧</div>
-        <h3>AirPods Pro</h3>
-        <p>Som premium</p>
-      </a>
-      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20Apple%20Watch%20original!" class="pcard">
-        <div class="pi">⌚</div>
-        <h3>Apple Watch</h3>
-        <p>Tecnologia no pulso</p>
-      </a>
-      <a href="https://wa.me/5564993269148?text=Olá!%20Venho%20interessado%20em%20acessórios!" class="pcard">
-        <div class="pi">🛡️</div>
-        <h3>Acessórios</h3>
-        <p>Capas, cabos e mais</p>
+    <div class="sec-label">Nossos Modelos</div>
+    <h2 class="sec-h2">iPhones em Destaque</h2>
+    <p class="sec-desc">Os modelos mais procurados — todos originais, com garantia de fábrica</p>
+
+    <div class="phones-grid">
+
+      <div class="phone-card rv">
+        <div class="pbadge-wrap"><span class="pbadge pbadge-new">NOVO</span></div>
+        <div class="phone-img-wrap">
+          <img src="../src/assets/images/iphone15pro.jpg" alt="iPhone 15 Pro Max" loading="lazy"/>
+          <div class="phone-img-overlay"></div>
+        </div>
+        <div class="phone-body">
+          <h3 class="phone-name">iPhone 15 Pro Max</h3>
+          <div class="phone-tags">
+            <span>256GB</span><span>512GB</span><span>1TB</span>
+          </div>
+          <div class="phone-price">a partir de <strong>R$&nbsp;9.499</strong></div>
+          <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20no%20iPhone%2015%20Pro%20Max!" class="btn-phone">
+            Consultar Preço →
+          </a>
+        </div>
+      </div>
+
+      <div class="phone-card rv">
+        <div class="pbadge-wrap"><span class="pbadge pbadge-new">NOVO</span></div>
+        <div class="phone-img-wrap">
+          <img src="../src/assets/images/iphone15.jpg" alt="iPhone 15 Pro" loading="lazy"/>
+          <div class="phone-img-overlay"></div>
+        </div>
+        <div class="phone-body">
+          <h3 class="phone-name">iPhone 15 Pro</h3>
+          <div class="phone-tags">
+            <span>128GB</span><span>256GB</span><span>512GB</span>
+          </div>
+          <div class="phone-price">a partir de <strong>R$&nbsp;8.499</strong></div>
+          <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20no%20iPhone%2015%20Pro!" class="btn-phone">
+            Consultar Preço →
+          </a>
+        </div>
+      </div>
+
+      <div class="phone-card rv">
+        <div class="pbadge-wrap"><span class="pbadge pbadge-hot">🔥 Mais Vendido</span></div>
+        <div class="phone-img-wrap">
+          <img src="../src/assets/images/iphone14pro.jpg" alt="iPhone 14 Pro" loading="lazy"/>
+          <div class="phone-img-overlay"></div>
+        </div>
+        <div class="phone-body">
+          <h3 class="phone-name">iPhone 14 Pro</h3>
+          <div class="phone-tags">
+            <span>128GB</span><span>256GB</span><span>512GB</span>
+          </div>
+          <div class="phone-price">a partir de <strong>R$&nbsp;6.999</strong></div>
+          <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20no%20iPhone%2014%20Pro!" class="btn-phone">
+            Consultar Preço →
+          </a>
+        </div>
+      </div>
+
+      <div class="phone-card rv">
+        <div class="pbadge-wrap"><span class="pbadge pbadge-off">OFERTA</span></div>
+        <div class="phone-img-wrap">
+          <img src="../src/assets/images/iphone13.jpg" alt="iPhone 13" loading="lazy"/>
+          <div class="phone-img-overlay"></div>
+        </div>
+        <div class="phone-body">
+          <h3 class="phone-name">iPhone 13</h3>
+          <div class="phone-tags">
+            <span>128GB</span><span>256GB</span>
+          </div>
+          <div class="phone-price">a partir de <strong>R$&nbsp;4.499</strong></div>
+          <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20no%20iPhone%2013!" class="btn-phone">
+            Consultar Preço →
+          </a>
+        </div>
+      </div>
+
+      <div class="phone-card rv phone-card-other">
+        <div class="phone-img-wrap phone-img-gradient">
+          <div class="other-icon">📱</div>
+        </div>
+        <div class="phone-body">
+          <h3 class="phone-name">Outros Modelos</h3>
+          <div class="phone-tags">
+            <span>iPhone 12</span><span>iPhone SE</span><span>Seminovo</span>
+          </div>
+          <div class="phone-price">Consulte disponibilidade</div>
+          <a href="https://wa.me/5564993269148?text=Olá!%20Quero%20consultar%20outros%20modelos%20de%20iPhone!" class="btn-phone">
+            Consultar →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="phones-cta">
+      <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20ver%20todos%20os%20iPhones%20disponíveis!" class="btn-wa">
+        💬 Ver Todos os Modelos no WhatsApp
       </a>
     </div>
   </div>
 </section>
 
-<!-- SOBRE -->
+<!-- ═══ MAIS PRODUTOS APPLE ═══ -->
+<section id="produtos" class="sec sec-dark">
+  <div class="sec-in">
+    <div class="sec-label">Linha Completa</div>
+    <h2 class="sec-h2">Mais Produtos Apple</h2>
+    <p class="sec-desc">MacBook, AirPods, Apple Watch, iPad e acessórios — todos originais</p>
+
+    <div class="cats-grid">
+
+      <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20em%20MacBook!" class="cat-card rv">
+        <div class="cat-img-wrap">
+          <img src="../src/assets/images/macbook.jpg" alt="MacBook Pro" loading="lazy"/>
+        </div>
+        <div class="cat-overlay">
+          <h3>MacBook Pro</h3>
+          <p>Performance e design premium</p>
+          <span class="cat-link">Consultar →</span>
+        </div>
+      </a>
+
+      <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20em%20AirPods!" class="cat-card rv">
+        <div class="cat-img-wrap">
+          <img src="../src/assets/images/airpods.jpg" alt="AirPods Pro" loading="lazy"/>
+        </div>
+        <div class="cat-overlay">
+          <h3>AirPods Pro</h3>
+          <p>Som premium com cancelamento de ruído</p>
+          <span class="cat-link">Consultar →</span>
+        </div>
+      </a>
+
+      <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20em%20Apple%20Watch!" class="cat-card rv">
+        <div class="cat-img-wrap">
+          <img src="../src/assets/images/applewatch.jpg" alt="Apple Watch" loading="lazy"/>
+        </div>
+        <div class="cat-overlay">
+          <h3>Apple Watch</h3>
+          <p>Tecnologia e saúde no pulso</p>
+          <span class="cat-link">Consultar →</span>
+        </div>
+      </a>
+
+      <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20em%20iPad!" class="cat-card rv">
+        <div class="cat-img-wrap">
+          <img src="../src/assets/images/ipad.jpg" alt="iPad" loading="lazy"/>
+        </div>
+        <div class="cat-overlay">
+          <h3>iPad</h3>
+          <p>Produtividade e entretenimento</p>
+          <span class="cat-link">Consultar →</span>
+        </div>
+      </a>
+
+      <a href="https://wa.me/5564993269148?text=Olá!%20Tenho%20interesse%20em%20acessórios%20Apple!" class="cat-card rv">
+        <div class="cat-img-wrap">
+          <img src="../src/assets/images/accessories.jpg" alt="Acessórios Apple" loading="lazy"/>
+        </div>
+        <div class="cat-overlay">
+          <h3>Acessórios</h3>
+          <p>Capas, cabos, carregadores e mais</p>
+          <span class="cat-link">Consultar →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ POR QUE ESCOLHER A STO ═══ -->
 <section id="sobre" class="sec">
   <div class="sec-in">
-    <h2 class="sec-h2">Por que escolher a STO?</h2>
-    
     <div class="about-grid">
-      <div class="abt-left">
-        <div class="abt-img-wrap">
-          <div class="abt-img" style="background-image:url('../src/assets/images/logo.png')"></div>
+
+      <div class="about-left rl">
+        <div class="about-logo-wrap">
+          <img src="../src/assets/images/logo.png" alt="STO iPhone"/>
         </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="sn">1K+</div>
-            <div class="sl">Clientes</div>
-          </div>
-          <div class="stat-card">
-            <div class="sn">5★</div>
-            <div class="sl">Avaliação</div>
-          </div>
-          <div class="stat-card">
-            <div class="sn">24h</div>
-            <div class="sl">Entrega</div>
-          </div>
-          <div class="stat-card">
-            <div class="sn">100%</div>
-            <div class="sl">Garantia</div>
-          </div>
+        <div class="about-stats">
+          <div class="astat"><span class="an">1K+</span><span class="al">Clientes</span></div>
+          <div class="astat"><span class="an">5★</span><span class="al">Avaliação</span></div>
+          <div class="astat"><span class="an">24h</span><span class="al">Entrega</span></div>
+          <div class="astat"><span class="an">100%</span><span class="al">Garantia</span></div>
         </div>
       </div>
-      
-      <div class="abt-right">
-        <h3 class="abt-h3">Loja Premium em Catalão</h3>
-        <p class="abt-p">
-          Somos a primeira e maior referência em iPhone e produtos Apple na região de Catalão, Goiás. 
-          Nossos produtos são 100% originais, com garantia de fábrica.
+
+      <div class="about-right rr">
+        <div class="sec-label">Por que a STO?</div>
+        <h2 class="sec-h2 left">Loja Premium em Catalão, Goiás</h2>
+        <p class="about-desc">
+          Somos a maior referência em iPhone e produtos Apple na região de Catalão.
+          Todos os produtos são 100% originais, com nota fiscal e garantia de fábrica.
+          Atendimento personalizado via WhatsApp com resposta imediata.
         </p>
-        
-        <ul class="abt-list">
-          <li><span>✓</span> Produtos 100% Originais</li>
-          <li><span>✓</span> Garantia de Fábrica</li>
-          <li><span>✓</span> Entrega em 24h</li>
-          <li><span>✓</span> Parcelamento Disponível</li>
-          <li><span>✓</span> Atendimento Premium</li>
-          <li><span>✓</span> Suporte Técnico</li>
+        <ul class="about-list">
+          <li><span class="check">✓</span> Produtos 100% Originais com NF</li>
+          <li><span class="check">✓</span> Garantia de Fábrica Apple</li>
+          <li><span class="check">✓</span> Entrega em até 24h</li>
+          <li><span class="check">✓</span> Parcelamento em até 12x</li>
+          <li><span class="check">✓</span> Troca e devolução garantidas</li>
+          <li><span class="check">✓</span> Suporte técnico especializado</li>
         </ul>
-        
-        <a href="https://wa.me/5564993269148?text=Olá!%20Gostaria%20de%20mais%20informações!" class="btn-wa" style="display:inline-flex;margin-top:28px">
-          <span>💬</span> Fale Conosco
+        <a href="https://wa.me/5564993269148?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20STO%20iPhone!" class="btn-wa" style="width:fit-content">
+          💬 Fale Conosco
         </a>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="sec">
+<!-- ═══ DEPOIMENTOS ═══ -->
+<section class="sec sec-dark">
   <div class="sec-in">
-    <h2 class="sec-h2">O que nossos clientes dizem</h2>
-    <p class="sec-desc">Confira as experiências reais de quem já comprou conosco</p>
-    
-    <div class="tgrid">
-      <div class="tcard">
-        <div class="tstar">⭐⭐⭐⭐⭐</div>
-        <p class="ttxt">"Produto original, entrega rápida e atendimento excelente. Recomendo muito!"</p>
-        <div class="tauth">João Silva</div>
+    <div class="sec-label">Clientes Satisfeitos</div>
+    <h2 class="sec-h2">O que dizem sobre a STO</h2>
+    <p class="sec-desc">Avaliações reais de quem já comprou com a gente</p>
+
+    <div class="reviews-grid">
+
+      <div class="review-card rv">
+        <div class="review-top">
+          <div class="review-avatar">JS</div>
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <p class="review-text">"Produto original, entrega rápida e atendimento excelente! Recebi meu iPhone 15 Pro no dia seguinte. Super recomendo!"</p>
+        <div class="review-footer">
+          <span class="review-name">João Silva</span>
+          <span class="review-label">iPhone 15 Pro · Catalão, GO</span>
+        </div>
       </div>
-      <div class="tcard">
-        <div class="tstar">⭐⭐⭐⭐⭐</div>
-        <p class="ttxt">"Melhor preço da região e com garantia. Voltarei a comprar com certeza."</p>
-        <div class="tauth">Maria Santos</div>
+
+      <div class="review-card rv">
+        <div class="review-top">
+          <div class="review-avatar">MS</div>
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <p class="review-text">"Melhor preço da região com garantia de fábrica. O atendimento pelo WhatsApp foi muito rápido e profissional."</p>
+        <div class="review-footer">
+          <span class="review-name">Maria Santos</span>
+          <span class="review-label">iPhone 14 Pro · Catalão, GO</span>
+        </div>
       </div>
-      <div class="tcard">
-        <div class="tstar">⭐⭐⭐⭐⭐</div>
-        <p class="ttxt">"Confiável, seguro e profissional. Ótima experiência de compra!"</p>
-        <div class="tauth">Pedro Costa</div>
+
+      <div class="review-card rv">
+        <div class="review-top">
+          <div class="review-avatar">PC</div>
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+        </div>
+        <p class="review-text">"Confiável, seguro e profissional. Já comprei 2 iPhones e ambos chegaram perfeitos. Sem dúvida voltarei a comprar!"</p>
+        <div class="review-footer">
+          <span class="review-name">Pedro Costa</span>
+          <span class="review-label">iPhone 13 + AirPods · Catalão, GO</span>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- COMUNIDADE -->
+<!-- ═══ COMUNIDADE ═══ -->
 <section id="comunidade" class="sec">
   <div class="sec-in">
-    <h2 class="sec-h2">Nossa Comunidade</h2>
-    <p class="sec-desc">Junte-se a milhares de clientes satisfeitos</p>
-    
-    <div class="ctgrid">
-      <div class="ccard ig">
-        <div class="cicon">📷</div>
+    <div class="sec-label">Comunidade</div>
+    <h2 class="sec-h2">Fique por Dentro</h2>
+    <p class="sec-desc">Siga nossas redes e entre no grupo VIP para ofertas exclusivas</p>
+
+    <div class="social-grid">
+      <a href="https://www.instagram.com/stoiphone_/" target="_blank" class="social-card social-ig rv">
+        <div class="social-icon">📷</div>
         <h3>Instagram</h3>
-        <p>Siga nossas novidades, promoções e dicas sobre produtos Apple</p>
-        <a href="https://www.instagram.com/stoiphone_/" target="_blank" class="btn-link">
-          Seguir no Instagram →
-        </a>
-      </div>
-      
-      <div class="ccard wa">
-        <div class="cicon">💬</div>
+        <p>Novidades, promoções e bastidores da STO iPhone todo dia</p>
+        <span class="social-link">@stoiphone_ · Seguir →</span>
+      </a>
+      <a href="https://chat.whatsapp.com/EpRkA8TR1TB3RFNa9vKiV9" target="_blank" class="social-card social-wa rv">
+        <div class="social-icon">💬</div>
         <h3>Grupo VIP WhatsApp</h3>
-        <p>Acesso exclusivo a promoções, lançamentos e suporte prioritário</p>
-        <a href="https://chat.whatsapp.com/EpRkA8TR1TB3RFNa9vKiV9" target="_blank" class="btn-link">
-          Entrar no Grupo →
-        </a>
-      </div>
+        <p>Acesso antecipado a promoções, lançamentos e suporte prioritário</p>
+        <span class="social-link">Entrar no Grupo →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- CONTATO -->
-<section id="contato" class="sec">
+<!-- ═══ CONTATO ═══ -->
+<section id="contato" class="sec sec-dark">
   <div class="sec-in">
+    <div class="sec-label">Fale Conosco</div>
     <h2 class="sec-h2">Entre em Contato</h2>
-    <p class="sec-desc">Estamos aqui para ajudar você</p>
-    
-    <div class="ctgrid">
-      <div class="contact-main">
-        <h3 class="cm-h3">Pronto para comprar?</h3>
-        <p class="cm-p">Envie uma mensagem no WhatsApp e nosso time responderá em segundos</p>
-        <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="btn-wa" style="display:inline-flex;font-size:18px">
-          <span>💬</span> Abrir WhatsApp
+    <p class="sec-desc">Atendimento rápido e personalizado — respondemos em minutos</p>
+
+    <div class="contact-grid">
+      <div class="contact-cta rv">
+        <div class="cta-icon">💬</div>
+        <h3>Pronto para comprar?</h3>
+        <p>Envie uma mensagem e nosso time responde na hora. Preços, parcelamento e disponibilidade — tudo pelo WhatsApp!</p>
+        <a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="btn-wa btn-wa-lg">
+          💬 Abrir WhatsApp Agora
         </a>
       </div>
-      
-      <div class="contact-info">
+
+      <div class="contact-info rv">
         <div class="ci-item">
-          <div class="ci-icon">📍</div>
+          <span class="ci-icon">📍</span>
           <div>
             <div class="ci-label">Localização</div>
             <div class="ci-val">Catalão, GO</div>
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">⏰</div>
+          <span class="ci-icon">⏰</span>
           <div>
-            <div class="ci-label">Horário</div>
-            <div class="ci-val">Seg-Dom: 9h-20h</div>
+            <div class="ci-label">Horário de Atendimento</div>
+            <div class="ci-val">Seg–Dom: 9h às 20h</div>
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">📱</div>
+          <span class="ci-icon">📱</span>
           <div>
             <div class="ci-label">WhatsApp</div>
             <div class="ci-val">(64) 99326-9148</div>
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">📷</div>
+          <span class="ci-icon">📷</span>
           <div>
             <div class="ci-label">Instagram</div>
             <div class="ci-val">@stoiphone_</div>
@@ -286,46 +458,52 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="foot-in">
-    <div class="foot-left">
-      <img src="../src/assets/images/logo.png" alt="STO iPhone" style="height:40px;width:auto;margin-bottom:12px"/>
-      <p class="foot-desc">A loja premium de iPhone e produtos Apple em Catalão, Goiás.</p>
-    </div>
-    
-    <div class="foot-links">
-      <div>
-        <div class="fl-h">Produto</div>
-        <a href="#produtos">iPhone</a>
-        <a href="#produtos">MacBook</a>
-        <a href="#produtos">AirPods</a>
-        <a href="#produtos">Acessórios</a>
+    <div class="foot-brand">
+      <img src="../src/assets/images/logo.png" alt="STO iPhone"/>
+      <p>A loja premium de iPhone e produtos Apple em Catalão, Goiás.</p>
+      <div class="foot-socials">
+        <a href="https://www.instagram.com/stoiphone_/" target="_blank">📷 Instagram</a>
+        <a href="https://wa.me/5564993269148" target="_blank">💬 WhatsApp</a>
+        <a href="https://chat.whatsapp.com/EpRkA8TR1TB3RFNa9vKiV9" target="_blank">👥 Grupo VIP</a>
       </div>
-      <div>
-        <div class="fl-h">Sobre</div>
+    </div>
+
+    <div class="foot-links">
+      <div class="fl-col">
+        <div class="fl-title">iPhones</div>
+        <a href="#iphones">iPhone 15 Pro Max</a>
+        <a href="#iphones">iPhone 15 Pro</a>
+        <a href="#iphones">iPhone 14 Pro</a>
+        <a href="#iphones">iPhone 13</a>
+      </div>
+      <div class="fl-col">
+        <div class="fl-title">Produtos</div>
+        <a href="#produtos">MacBook Pro</a>
+        <a href="#produtos">AirPods Pro</a>
+        <a href="#produtos">Apple Watch</a>
+        <a href="#produtos">iPad</a>
+      </div>
+      <div class="fl-col">
+        <div class="fl-title">Empresa</div>
         <a href="#sobre">Quem Somos</a>
         <a href="#comunidade">Comunidade</a>
         <a href="#contato">Contato</a>
         <a href="https://wa.me/5564993269148">WhatsApp</a>
       </div>
-      <div>
-        <div class="fl-h">Redes</div>
-        <a href="https://www.instagram.com/stoiphone_/">Instagram</a>
-        <a href="https://chat.whatsapp.com/EpRkA8TR1TB3RFNa9vKiV9">Grupo VIP</a>
-        <a href="https://wa.me/5564993269148">Suporte</a>
-      </div>
     </div>
   </div>
-  
+
   <div class="foot-bottom">
-    <p>&copy; 2024 STO iPhone Catalão. Todos os direitos reservados.</p>
+    <p>© 2024 STO iPhone Catalão — Todos os direitos reservados.</p>
   </div>
 </footer>
 
-<!-- FLOATING WA BUTTON -->
-<a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="floating-wa" title="Abrir WhatsApp">
-  <span>💬</span>
+<!-- ═══ FLOATING WA ═══ -->
+<a href="https://wa.me/5564993269148?text=Olá!%20Vim%20pelo%20site%20e%20quero%20saber%20mais!" class="float-wa" title="Falar no WhatsApp" aria-label="Abrir WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
 </a>
 
 <script src="../src/js/scripts.js"></script>
